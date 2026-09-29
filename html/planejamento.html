@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SEU NOME">
+    <meta name="keywords" content="formulário, plano, estudo, date, range, datalist">
+    <meta name="description"
+        content="Formulário para montar um plano de estudo com data, tópico, nível de confiança e envio de anotações.">
+    <title>Plano de estudo | Guia de Estudo de HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Guia de Estudo de HTML</h1>
+        <p>Revisão prática de HTML semântico para a prova</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="tags.html">Tags avançadas</a></li>
+            <li><a href="planejamento.html">Plano de estudo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Monte seu plano de estudo</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Dados do plano</legend>
+                    <p><label>Nome: <input type="text" name="nome" placeholder="Digite seu nome completo"
+                                required></label></p>
+                    <p><label>E-mail: <input type="email" name="email" placeholder="exemplo@email.com" required></label>
+                    </p>
+                    <p><label>Data da prova: <input type="date" name="prova" required></label></p>
+                    <p><label>Tópico principal: <input list="topicos" name="topico"
+                                placeholder="Digite ou escolha um tópico" required></label></p>
+                    <datalist id="topicos">
+                        <option value="Tags semânticas">
+                        <option value="Tabelas">
+                        <option value="Formulários">
+                        <option value="Multimídia">
+                        <option value="Marcação de texto">
+                    </datalist>
+                    <p><label>Confiança (0 a 10): <input type="range" name="confianca" min="0" max="10"></label></p>
+                    <p><label>Anotações (arquivo): <input type="file" name="anotacoes"></label></p>
+                    <p><input type="submit" value="Enviar plano"></p>
+                </fieldset>
+            </form>
+            <details>
+                <summary>Como o formulário funciona?</summary>
+                <p>Campos com <mark>required</mark> precisam ser preenchidos; o placeholder mostra uma dica dentro do
+                    campo.</p>
+            </details>
+        </section>
+        <article>
+            <h2>Cronograma sugerido</h2>
+            <ol>
+                <li>Semântica e estrutura da página</li>
+                <li>Tabelas e listas</li>
+                <li>Formulários</li>
+                <li>Multimídia e marcação avançada</li>
+            </ol>
+        </article>
+        <aside>
+            <h2>Voltar</h2>
+            <p><a href="inicio.html">Ir para o início</a></p>
+        </aside>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+    </footer>
+</body>
+
+</html>

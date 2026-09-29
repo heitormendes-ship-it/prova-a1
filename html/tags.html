@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SEU NOME">
+    <meta name="keywords" content="html5, tags, tabela, marcação, mark, meter">
+    <meta name="description"
+        content="Resumo das tags de marcação avançada e semânticas de HTML5 com tabela comparativa e exemplos.">
+    <title>Tags avançadas | Guia de Estudo de HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Guia de Estudo de HTML</h1>
+        <p>Revisão prática de HTML semântico para a prova</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="tags.html">Tags avançadas</a></li>
+            <li><a href="planejamento.html">Plano de estudo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Tabela-resumo</h2>
+            <table border="1">
+                <caption>Tags por categoria</caption>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Tag</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Semânticas</td>
+                        <td>&lt;header&gt;</td>
+                        <td>Cabeçalho da página ou seção</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Menu de navegação</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- TODO (autoria): escreva aqui, com suas palavras, algo que você tentou fazer e teve dificuldade (ex.: rowspan, caminhos ../img). -->
+        </section>
+        <article>
+            <h2>Marcação de texto</h2>
+            <p>Nota do simulado: <del>5,0</del> <ins>8,5</ins>. Lembre-se de <mark>revisar tabelas</mark>.</p>
+            <p>Sigla: <abbr title="Cascading Style Sheets">CSS</abbr> fica para a próxima unidade.</p>
+            <p>Bateria de estudo: <progress value="70" max="100">70%</progress> 70%</p>
+            <p>Confiança no conteúdo: <meter value="3" min="0" max="5">3 de 5</meter> nota 3</p>
+            <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                <p>HTML é a linguagem de marcação usada para estruturar o conteúdo de páginas web.</p>
+                Slides da disciplina Front-end Web
+            </blockquote>
+            <figure>
+                <img src="../img/marcacao-avancada.png"
+                    alt="Quadro com as tags mark, del, ins, abbr, cite, blockquote, progress e meter" width="500">
+                <figcaption>Figura 2 &mdash; Tags de marcação avançada</figcaption>
+            </figure>
+            <details>
+                <summary>Quando usar del e ins?</summary>
+                <p>Para mostrar texto removido e texto inserido, como correções de nota ou de preço.</p>
+            </details>
+        </article>
+        <aside>
+            <h2>Dica</h2>
+            <p>Feche sempre as tags e use <abbr title="atributo alternativo">alt</abbr> nas imagens.</p>
+        </aside>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+    </footer>
+</body>
+
+</html>
