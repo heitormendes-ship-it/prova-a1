@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="SEU NOME">
-    <meta name="keywords" content="formulário, plano, date, range, datalist">
-    <meta name="description" content="Formulário para montar um plano de estudo com data, tópico, confiança e arquivo.">
-    <title>Plano de estudo | Guia de Estudo de HTML</title>
+    <meta name="author" content="Heitor Mendes Crispim">
+    <meta name="keywords" content="formulário, plano, date, range, datalist, checkbox, radio">
+    <meta name="description" content="Formulário com data, arquivo, escala e lista de sugestões.">
+    <title>Plano de estudo - HTML na prática</title>
+<base target="_blank">
 </head>
 
 <body>
     <header>
-        <h1>Guia de Estudo de HTML</h1>
-        <p>Revisão prática de HTML para a prova</p>
+        <h1>HTML na prática</h1>
+        <p>Heitor Mendes Crispim</p>
     </header>
     <nav>
         <ul>
@@ -22,22 +23,30 @@
             <li><a href="semantica.html">Semântica</a></li>
             <li><a href="tags.html">Tags avançadas</a></li>
             <li><a href="multimidia.html">Multimídia</a></li>
-            <li><a href="planejamento.html">Plano de estudo</a></li>
+            <li><a href="planejamento.html" aria-current="page">Plano de estudo</a></li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Monte seu plano de estudo</h2>
+        <section id="sumario">
+            <h2>Nesta página</h2>
+            <ul>
+                <li><a href="#formulario">Formulário</a></li>
+                <li><a href="#ordem">Ordem dos assuntos</a></li>
+                <li><a href="#voltar">Voltar</a></li>
+            </ul>
+        </section>
+        <section id="formulario">
+            <h2>Plano de estudo</h2>
             <form action="#">
                 <fieldset>
-                    <legend>Dados do plano</legend>
-                    <p><label>Nome: <input type="text" name="nome" placeholder="Digite seu nome completo"
-                                required></label></p>
-                    <p><label>E-mail: <input type="email" name="email" placeholder="exemplo@email.com" required></label>
-                    </p>
-                    <p><label>Data da prova: <input type="date" name="prova" required></label></p>
-                    <p><label>Tópico principal: <input list="topicos" name="topico"
-                                placeholder="Digite ou escolha um tópico" required></label></p>
+                    <legend>Dados pessoais</legend>
+                    <label>Nome: <input type="text" name="nome" placeholder="Digite seu nome completo"
+                            required></label><br>
+                    <label>E-mail: <input type="email" name="email" placeholder="exemplo@email.com"
+                            required></label><br>
+                    <label>Data da prova: <input type="date" name="prova" required></label><br>
+                    <label>Assunto: <input list="topicos" name="topico"
+                            placeholder="Digite ou escolha um assunto" required></label>
                     <datalist id="topicos">
                         <option value="Tags semânticas">
                         <option value="Tabelas">
@@ -45,14 +54,33 @@
                         <option value="Multimídia">
                         <option value="Marcação de texto">
                     </datalist>
-                    <p><label>Confiança (0 a 10): <input type="range" name="confianca" min="0" max="10"></label></p>
-                    <p><label>Anotações (arquivo): <input type="file" name="anotacoes"></label></p>
-                    <p><input type="submit" value="Enviar plano"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Rotina de estudo</legend>
+                    <label>Confiança (0 a 10): <input type="range" name="confianca" min="0" max="10"></label><br>
+                    <label>Anotações: <input type="file" name="anotacoes"></label>
+                    <p>Turno preferido:</p>
+                    <label><input type="radio" name="turno" value="manha" checked> Manhã</label>
+                    <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                    <label><input type="radio" name="turno" value="noite"> Noite</label>
+                    <p>Dias disponíveis:</p>
+                    <label><input type="checkbox" name="dia" value="seg"> Segunda</label>
+                    <label><input type="checkbox" name="dia" value="ter"> Terça</label>
+                    <label><input type="checkbox" name="dia" value="qua"> Quarta</label>
+                    <label><input type="checkbox" name="dia" value="qui"> Quinta</label>
+                    <label><input type="checkbox" name="dia" value="sex"> Sexta</label><br>
+                    <label><input type="checkbox" name="aceite" required> Confirmo que revisei o
+                        conteúdo</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Envio</legend>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
                 </fieldset>
             </form>
         </section>
-        <article>
-            <h2>Cronograma sugerido</h2>
+        <article id="ordem">
+            <h2>Ordem dos assuntos</h2>
             <ol>
                 <li>Semântica</li>
                 <li>Tabelas e marcação</li>
@@ -61,17 +89,18 @@
             </ol>
             <details>
                 <summary>Como o formulário funciona?</summary>
-                <p>Campos com <mark>required</mark> são obrigatórios; o placeholder mostra uma dica dentro do campo.</p>
+                <p>Os campos com <mark>required</mark> são obrigatórios. O placeholder é a dica que aparece dentro do
+                    campo.</p>
             </details>
         </article>
-        <aside>
+        <aside id="voltar">
             <h2>Voltar</h2>
             <p><a href="index.html">Ir para o início</a></p>
         </aside>
     </main>
     <footer>
         <hr>
-        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+        <p>&copy; 2026 Heitor Mendes Crispim</p>
     </footer>
 </body>
 

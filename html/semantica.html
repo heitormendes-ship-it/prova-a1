@@ -5,61 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="SEU NOME">
+    <meta name="author" content="Heitor Mendes Crispim">
     <meta name="keywords" content="semântica, header, nav, main, footer">
-    <meta name="description" content="Revisão das tags semânticas header, nav, main, section, article, aside e footer.">
-    <title>Semântica | Guia de Estudo de HTML</title>
+    <meta name="description" content="As tags semânticas do HTML5 e para que cada uma serve.">
+    <title>Semântica - HTML na prática</title>
+    <base target="_blank">
 </head>
 
 <body>
     <header>
-        <h1>Guia de Estudo de HTML</h1>
-        <p>Revisão prática de HTML para a prova</p>
+        <h1>HTML na prática</h1>
+        <p>Heitor Mendes Crispim</p>
     </header>
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="semantica.html">Semântica</a></li>
+            <li><a href="semantica.html" aria-current="page">Semântica</a></li>
             <li><a href="tags.html">Tags avançadas</a></li>
             <li><a href="multimidia.html">Multimídia</a></li>
             <li><a href="planejamento.html">Plano de estudo</a></li>
         </ul>
     </nav>
     <main>
-        <section>
+        <section id="sumario">
+            <h2>Nesta página</h2>
+            <ul>
+                <li><a href="#tags-semanticas">Tags semânticas</a></li>
+                <li><a href="#sintaxe">Sintaxe e semântica</a></li>
+                <li><a href="#lembrete">Lembrete</a></li>
+            </ul>
+        </section>
+        <section id="tags-semanticas">
             <h2>Tags semânticas</h2>
             <ul>
-                <li><b>header</b>: cabeçalho da página ou seção</li>
-                <li><b>nav</b>: menu de navegação</li>
+                <li><b>header</b>: cabeçalho da página</li>
+                <li><b>nav</b>: menu</li>
                 <li><b>main</b>: conteúdo principal</li>
-                <li><b>section</b>: seção temática</li>
+                <li><b>section</b>: seção do conteúdo</li>
                 <li><b>article</b>: conteúdo independente</li>
                 <li><b>aside</b>: conteúdo lateral</li>
                 <li><b>footer</b>: rodapé</li>
             </ul>
         </section>
-        <article>
-            <h2>Sintaxe x semântica</h2>
-            <p>Sintaxe é abrir e fechar tags corretamente. Semântica é escolher a tag certa para o significado do
-                conteúdo.</p>
+        <article id="sintaxe">
+            <h2>Sintaxe e semântica</h2>
+            <p>Sintaxe é abrir e fechar as tags do jeito certo. Semântica é usar a tag que combina com o conteúdo.</p>
             <figure>
-                <img src="../img/estrutura-semantica.png" alt="Diagrama com header, nav, main, aside e footer"
-                    width="500">
-                <figcaption>Figura 1 &mdash; Estrutura semântica de uma página</figcaption>
-            </figure>
             <details>
                 <summary>Por que não usar só div?</summary>
-                <p>Leitores de tela e buscadores entendem melhor o significado do conteúdo com tags semânticas.</p>
+                <p>Com as tags semânticas, buscadores e leitores de tela entendem melhor a página.</p>
             </details>
         </article>
-        <aside>
-            <h2>Dica</h2>
-            <p>Use <mark>um</mark> main por página.</p>
+        <aside id="lembrete">
+            <h2>Lembrete</h2>
+            <p>Só pode ter um <mark>main</mark> por página.</p>
         </aside>
     </main>
     <footer>
         <hr>
-        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+        <p>&copy; 2026 Heitor Mendes Crispim</p>
     </footer>
 </body>
 

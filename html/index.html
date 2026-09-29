@@ -6,20 +6,20 @@
     <meta http-equiv="content-language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Heitor Mendes Crispim">
-    <meta name="keywords" content="html, estudo, prova, revisão, semântica">
-    <meta name="description"
-        content="Guia de estudo com revisão de HTML semântico, multimídia e formulários para a prova.">
-    <title>Início | Guia de Estudo de HTML</title>
+    <meta name="keywords" content="html, semântica, tabela, formulário, marcação">
+    <meta name="description" content="Resumo do que aprendi em HTML nas aulas de Front-end Web.">
+    <title>Início - HTML na prática</title>
+<base target="_blank">
 </head>
 
 <body>
     <header>
-        <h1>Guia de Estudo de HTML</h1>
-        <p>Revisão prática de HTML para a prova</p>
+        <h1>HTML na prática</h1>
+        <p>Heitor Mendes Crispim</p>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html" aria-current="page">Início</a></li>
             <li><a href="semantica.html">Semântica</a></li>
             <li><a href="tags.html">Tags avançadas</a></li>
             <li><a href="multimidia.html">Multimídia</a></li>
@@ -27,38 +27,44 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Bem-vindo</h2>
-            <p>Este guia reúne o que revisar antes da prova: <mark>tags semânticas</mark>, tabelas, multimídia,
-                formulários e marcação de texto. Use o menu para navegar.</p>
-            <p>Prova marcada para <time datetime="2026-09-29">29/09/2026</time>.</p>
+        <section id="sumario">
+            <h2>Nesta página</h2>
+            <ul>
+                <li><a href="#sobre">Sobre o site</a></li>
+                <li><a href="#por-que-html">Por que HTML?</a></li>
+                <li><a href="#links">Links úteis</a></li>
+            </ul>
         </section>
-        <article>
-            <h2>Por que estudar HTML?</h2>
-            <p>O <abbr title="HyperText Markup Language">HTML</abbr> estrutura todo conteúdo da web.</p>
+        <section id="sobre">
+            <h2>Sobre o site</h2>
+            <p>Aqui estão as coisas que vimos nas aulas de HTML: <mark>semântica</mark>, tabela, formulário e marcação
+                de texto.</p>
+            <p>Prova feita em <time datetime="2026-09-29">29/09/2026</time>.</p>
+        </section>
+        <article id="por-que-html">
+            <h2>Por que HTML?</h2>
+            <p>O <abbr title="HyperText Markup Language">HTML</abbr> é a base de qualquer página da web.</p>
             <blockquote>
                 <p>Aluno que não sabe abrir uma pasta estando no P8.</p>
-                <p>Prof. Israel Cunha, em aula</p>
+                <p><cite>Prof. Israel Cunha, em aula</cite></p>
             </blockquote>
             <details>
-                <summary>Como usar este guia?</summary>
-                <p>Leia uma página por vez, na ordem do menu, e teste o formulário no final.</p>
+                <summary>Como navegar aqui?</summary>
+                <p>Use o menu no topo ou os links do sumário. Eles aparecem em todas as páginas.</p>
             </details>
         </article>
-        <aside>
-            <h2>Links úteis</h2>
+        <aside id="links">
+            <h2>Links</h2>
             <ul>
-                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN &mdash; HTML</a></li>
-                <li><a href="https://dev.w3.org/html5/html-author/">W3C &mdash; HTML5</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN - HTML</a></li>
+                <li><a href="https://dev.w3.org/html5/html-author/">W3C - HTML5</a></li>
             </ul>
         </aside>
     </main>
     <footer>
         <hr>
-        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+        <p>&copy; 2026 Heitor Mendes Crispim</p>
     </footer>
-
-    <meta name="author" content="Heitor Mendes Crispim">
 </body>
 
 </html>

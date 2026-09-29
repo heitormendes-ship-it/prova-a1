@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Heitor Mendes Crispim">
+    <meta name="keywords" content="audio, video, figure, blockquote">
+    <meta name="description" content="Tags de multimídia do HTML: audio, video, figure e figcaption.">
+    <title>Multimídia - HTML na prática</title>
+    <base target="_blank">
+</head>
+
+<body>
+    <header>
+        <h1>HTML na prática</h1>
+        <p>Heitor Mendes Crispim</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="semantica.html">Semântica</a></li>
+            <li><a href="tags.html">Tags avançadas</a></li>
+            <li><a href="multimidia.html" aria-current="page">Multimídia</a></li>
+            <li><a href="audio.html">Áudio</a></li>
+            <li><a href="planejamento.html">Plano de estudo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sumario">
+            <h2>Nesta página</h2>
+            <ul>
+                <li><a href="#audio-video">Áudio e vídeo</a></li>
+                <li><a href="#legenda">Imagem com legenda</a></li>
+                <li><a href="#pastas">Pastas</a></li>
+            </ul>
+        </section>
+        <section id="audio-video">
+            <h2>Áudio e vídeo</h2>
+            <p>As tags <b>audio</b> e <b>video</b> aceitam os atributos controls, autoplay, loop e muted.</p>
+            <p>
+                <audio controls>
+                    <source src="../audio/audio (1).mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+            </p>
+        </section>
+        <article id="legenda">
+            <h2>Imagem com legenda</h2>
+            <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                <p>HTML é a linguagem de marcação usada para estruturar o conteúdo de páginas web.</p>
+                <p>Slides da disciplina de Front-end Web</p>
+            </blockquote>
+            <details>
+                <summary>O que é o figcaption?</summary>
+                <p>É a legenda da imagem. Ele fica dentro do figure.</p>
+            </details>
+        </article>
+        <aside id="pastas">
+            <h2>Pastas</h2>
+            <p>Os arquivos de mídia ficam nas pastas <mark>audio/</mark> e <mark>video/</mark>.</p>
+        </aside>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Heitor Mendes Crispim</p>
+    </footer>
+</body>
+
+</html>

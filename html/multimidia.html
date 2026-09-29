@@ -5,58 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="SEU NOME">
-    <meta name="keywords" content="audio, multimídia, figure, blockquote">
-    <meta name="description" content="Áudio local, figure e figcaption e citação com blockquote e cite em HTML.">
-    <title>Multimídia | Guia de Estudo de HTML</title>
+    <meta name="author" content="Heitor Mendes Crispim">
+    <meta name="keywords" content="audio, video, figure, blockquote">
+    <meta name="description" content="Tags de multimídia do HTML: audio, video, figure e figcaption.">
+    <title>Multimídia - HTML na prática</title>
+<base target="_blank">
 </head>
 
 <body>
     <header>
-        <h1>Guia de Estudo de HTML</h1>
-        <p>Revisão prática de HTML para a prova</p>
+        <h1>HTML na prática</h1>
+        <p>Heitor Mendes Crispim</p>
     </header>
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="semantica.html">Semântica</a></li>
             <li><a href="tags.html">Tags avançadas</a></li>
-            <li><a href="multimidia.html">Multimídia</a></li>
+            <li><a href="multimidia.html" aria-current="page">Multimídia</a></li>
             <li><a href="planejamento.html">Plano de estudo</a></li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Pausa de estudo</h2>
-            <p>Toque de aviso para o ciclo de 25 minutos de estudo e 5 de descanso:</p>
-            <audio controls>
-                <source src="../audio/toque-pausa.wav" type="audio/wav">
-                Seu navegador não suporta audio.
-            </audio>
+        <section id="sumario">
+            <h2>Nesta página</h2>
+            <ul>
+                <li><a href="#audio">Áudio local</a></li>
+                <li><a href="#legenda">Imagem com legenda</a></li>
+                <li><a href="#pastas">Pastas</a></li>
+            </ul>
         </section>
-        <article>
+        <section id="audio">
+            <h2>Áudio local</h2>
+            <p>As tags <b>audio</b> e <b>video</b> aceitam os atributos controls, autoplay, loop e muted.</p>
+            <audio controls>
+                <source src="../audio/audio (1).mp3" type="audio/mpeg">
+                Seu navegador não suporta a tag audio.
+            </audio>
+            <details>
+                <summary>Quais são os atributos?</summary>
+                <p><b>controls</b> mostra o player, <b>loop</b> repete, <b>muted</b> inicia sem som e
+                    <b>autoplay</b> toca sozinho.</p>
+            </details>
+        </section>
+        <article id="legenda">
             <h2>Imagem com legenda</h2>
-            <figure>
-                <img src="../img/estrutura-semantica.png" alt="Diagrama da estrutura semântica" width="400">
-                <figcaption>Figura 3 &mdash; figure e figcaption juntos</figcaption>
-            </figure>
             <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
                 <p>HTML é a linguagem de marcação usada para estruturar o conteúdo de páginas web.</p>
-                <p>Slides da disciplina Front-end Web</p>
+                <p><cite>Slides da disciplina de Front-end Web</cite></p>
             </blockquote>
             <details>
-                <summary>Quais atributos o audio aceita?</summary>
-                <p>controls, autoplay, loop e muted.</p>
+                <summary>O que é o figcaption?</summary>
+                <p>É a legenda da imagem. Ele fica dentro do figure.</p>
             </details>
         </article>
-        <aside>
-            <h2>Vídeo</h2>
-            <p>A pasta <mark>video/</mark> está reservada para vídeos locais.</p>
+        <aside id="pastas">
+            <h2>Pastas</h2>
+            <p>Os arquivos de mídia ficam nas pastas <mark>audio/</mark> e <mark>video/</mark>.</p>
         </aside>
     </main>
     <footer>
         <hr>
-        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+        <p>&copy; 2026 Heitor Mendes Crispim</p>
     </footer>
 </body>
 
