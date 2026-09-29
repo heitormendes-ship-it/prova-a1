@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SEU NOME">
+    <meta name="keywords" content="audio, multimídia, figure, blockquote">
+    <meta name="description" content="Áudio local, figure e figcaption e citação com blockquote e cite em HTML.">
+    <title>Multimídia | Guia de Estudo de HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Guia de Estudo de HTML</h1>
+        <p>Revisão prática de HTML para a prova</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="semantica.html">Semântica</a></li>
+            <li><a href="tags.html">Tags avançadas</a></li>
+            <li><a href="multimidia.html">Multimídia</a></li>
+            <li><a href="planejamento.html">Plano de estudo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Pausa de estudo</h2>
+            <p>Toque de aviso para o ciclo de 25 minutos de estudo e 5 de descanso:</p>
+            <audio controls>
+                <source src="../audio/toque-pausa.wav" type="audio/wav">
+                Seu navegador não suporta audio.
+            </audio>
+        </section>
+        <article>
+            <h2>Imagem com legenda</h2>
+            <figure>
+                <img src="../img/estrutura-semantica.png" alt="Diagrama da estrutura semântica" width="400">
+                <figcaption>Figura 3 &mdash; figure e figcaption juntos</figcaption>
+            </figure>
+            <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                <p>HTML é a linguagem de marcação usada para estruturar o conteúdo de páginas web.</p>
+                <p>Slides da disciplina Front-end Web</p>
+            </blockquote>
+            <details>
+                <summary>Quais atributos o audio aceita?</summary>
+                <p>controls, autoplay, loop e muted.</p>
+            </details>
+        </article>
+        <aside>
+            <h2>Vídeo</h2>
+            <p>A pasta <mark>video/</mark> está reservada para vídeos locais.</p>
+        </aside>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Guia de Estudo de HTML &mdash; projeto acadêmico do UNIPÊ, feito só com HTML.</p>
+    </footer>
+</body>
+
+</html>
